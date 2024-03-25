@@ -12,7 +12,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in rec {
         packages = flake-utils.lib.flattenTree rec {
-          
+          aegis-rs = pkgs.callPackage ./pkgs/aegis-rs.nix { };
         };
         devShells.default = with pkgs; mkShell {
           buildInputs = [

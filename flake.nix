@@ -13,6 +13,7 @@
       in rec {
         packages = flake-utils.lib.flattenTree rec {
           aegis-rs = pkgs.callPackage ./pkgs/aegis-rs.nix { };
+          hl = pkgs.callPackage ./pkgs/hl { };
           nosig = pkgs.callPackage ./pkgs/nosig.nix { };
         };
         devShells.default = with pkgs; mkShell {

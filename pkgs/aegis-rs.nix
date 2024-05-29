@@ -2,12 +2,12 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "aegis-rs";
-  version = "0.3.0";
+  version = "0.3.1";
   src = fetchFromGitHub {
     owner = "Granddave";
     repo = "${pname}";
     rev = version;
-    hash = "sha256-UcQqLP28HZns5vglnhA6Dql+2QKSWJAH4u0SGRSqE5s=";
+    hash = "sha256-Eu9LNcHx04GqmPx1/Eh3KlDyWJiXptaOlpLMcwbTHs0=";
   };
-  cargoHash = "sha256-RyqzcU2ZHttZJIOFWvvvuqgKID0ibavq/l+gWQ/UUQQ=";
+  cargoHash = "sha256-6GUePS58eO6wKGSwR/MoNzT5M0WVRdUfKxdYMYZF1jk=";
 }
